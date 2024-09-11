@@ -15,12 +15,8 @@
         />
 
         <!-- Css -->
-        <link
-            rel="preload"
-            href="./css/plugins.css"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
-        />
+        <link rel="stylesheet" href="./css/main.css" />
+
         <link
             rel="preload"
             href="./fonts/fonts.css"
@@ -28,18 +24,17 @@
             onload="this.onload=null;this.rel='stylesheet'"
         />
         <noscript>
-            <link rel="stylesheet" href="./css/plugins.css" />
             <link rel="stylesheet" href="./fonts/fonts.css" />
         </noscript>
 
         <link
             rel="preload"
-            href="./css/main.css"
+            href="./css/plugins.css"
             as="style"
             onload="this.onload=null;this.rel='stylesheet'"
         />
         <noscript>
-            <link rel="stylesheet" href="./css/main.css" />
+            <link rel="stylesheet" href="./css/plugins.css" />
         </noscript>
 
         <!-- Pré-conecte para melhorar a latência -->
@@ -438,9 +433,9 @@
 
             <section data-aos="fade-right">
                 <div
-                    class="container flex flex-wrap items-center justify-between gap-20 py-10 md:flex-nowrap"
+                    class="container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row lg:justify-between"
                 >
-                    <div class="max-w-xl">
+                    <div class="flex-1">
                         <span
                             class="font-medium uppercase tracking-widest text-acent"
                         >
@@ -482,22 +477,13 @@
                             </div>
                         </a>
                     </div>
-                    <div class="fit relative">
+                    <div class="">
                         <img
-                            class="rounded-xl"
-                            src="/assets/webp/big-smile-s3.webp"
-                            alt="Foto antes e depois de um cliente que colocou Facetas dentais."
+                            src="/assets/webp/group-3.webp"
+                            alt="Foto antes e depois de dois clientes que colocaram Facetas dentais."
                             loading="lazy"
-                            width="308"
-                            height="416"
-                        />
-                        <img
-                            class="absolute right-60 top-32 rounded-xl"
-                            src="/assets/webp/small-smile-s3.webp"
-                            alt="Foto antes e depois de uma cliente que colocou Facetas de resina."
-                            loading="lazy"
-                            width="248"
-                            height="273"
+                            width="470"
+                            height="463"
                         />
                     </div>
                 </div>
@@ -659,43 +645,51 @@
                 </h2>
                 <div class="swiper testemonies max-w-screen-2xl">
                     <div class="swiper-wrapper py-10">
-                        <div class="swiper-slide max-w-fit">
-                            <div class="w-full">
-                                <img
-                                    class="mx-auto"
-                                    src="/assets/webp/testemonie-1.webp"
-                                    loading="lazy"
-                                    alt="Vídeo de testemunha"
-                                    width="512"
-                                    height="911"
-                                />
-                            </div>
+                        <div class="swiper-slide">
+                            <iframe
+                                class="aspect-[9/16] w-full"
+                                src="https://www.youtube-nocookie.com/embed/YKY_fjDKZA4?si=v9NLXtsNiRAy3hJw&amp;controls=0"
+                                title="YouTube video player"
+                                frameborder="0"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
                         </div>
-                        <div class="swiper-slide max-w-fit">
-                            <div class="w-fit">
-                                <img
-                                    class="mx-auto"
-                                    src="/assets/webp/testemonie-2.webp"
-                                    loading="lazy"
-                                    alt="Vídeo de testemunha"
-                                    width="512"
-                                    height="911"
-                                />
-                            </div>
+
+                        <div class="swiper-slide">
+                            <iframe
+                                class="aspect-[9/16] w-full"
+                                src="https://www.youtube-nocookie.com/embed/z8B7jqOK4go?si=9M3BIBUYXButKmgF&amp;controls=0"
+                                title="YouTube video player"
+                                frameborder="0"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
                         </div>
-                        <div class="swiper-slide max-w-fit">
-                            <div class="w-fit">
-                                <img
-                                    class="mx-auto"
-                                    src="/assets/webp/testemonie-3.webp"
-                                    loading="lazy"
-                                    alt="Vídeo de testemunha"
-                                    width="512"
-                                    height="911"
-                                />
-                            </div>
+
+                        <div class="swiper-slide">
+                            <iframe
+                                class="aspect-[9/16] w-full"
+                                src="https://www.youtube-nocookie.com/embed/cWCqC9Ms_fQ?si=sUoGzTyj-XqUQD7C&amp;controls=0"
+                                title="YouTube video player"
+                                frameborder="0"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
                         </div>
                     </div>
+                    <div
+                        class="swiper-button-prev rounded-full bg-off px-5 py-2 after:-ml-1 after:scale-50 after:text-acent"
+                    ></div>
+                    <div
+                        class="swiper-button-next rounded-full bg-off px-5 py-2 after:-mr-1 after:scale-50 after:text-acent"
+                    ></div>
                 </div>
                 <a
                     href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"

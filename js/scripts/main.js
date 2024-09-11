@@ -1,32 +1,9 @@
-// window.addEventListener("scroll", function () {
-//   let header = document.querySelector("header");
-//   let scrollPosition = window.scrollY;
-
-//   if (scrollPosition > 0) {
-//     header.classList.add("active");
-//   } else {
-//     header.classList.remove("active");
-//   }
-// });
-
 // AOS
 AOS.init({
   duration: 700,
   once: true,
 });
 
-// function loadVideo(container) {
-//   if (!container.classList.contains('video-loaded')) {
-//     container.innerHTML = `
-//           <video controls autoplay>
-//               <source src="./assets/video-apresentacao-revendcell.mp4" type="video/mp4">
-//               Your browser does not support the video tag.
-//           </video>
-//       `;
-//     container.classList.add('video-loaded');
-//     container.style.cursor = 'default';
-//   }
-// }
 
 // SwiperJS 
 var swiper = new Swiper('.swiper.choice', {
@@ -53,14 +30,18 @@ var swiper = new Swiper('.swiper.testemonies', {
   lazyLoading: true,
   centeredSlides: true,
   spaceBetween: 16,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   breakpoints: {
     0: {
       slidesPerView: 1.2,
     },
-    676: {
+    840: {
       slidesPerView: 2,
     },
-    840: {
+    1180: {
       centeredSlides: false,
       slidesPerView: 3,
     },
@@ -145,6 +126,8 @@ function closeMobileSidebar() {
   item.setAttribute('style', 'display: none;');
 }
 
+
+// Use Lenis for Smooth Scroll
 window.addEventListener('load', function () {
   var link = document.createElement('link');
   link.rel = 'stylesheet';
@@ -152,7 +135,6 @@ window.addEventListener('load', function () {
   document.head.appendChild(link);
 });
 
-// Use Lenis for Smooth Scroll
 const lenis = new Lenis({
   duration: 1.2,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
