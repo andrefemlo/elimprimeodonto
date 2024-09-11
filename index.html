@@ -1,56 +1,35 @@
 <!doctype html>
-<html lang="pt-BR" class="lenis lenis-smooth">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Página comercial para uma agencia de desenvolvimento de sites"
-        />
-        <title>Elim Prime Odonto | Você com um sorriso perfeito!</title>
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="/assets/svg/logo-revendcell.svg"
-        />
+<html lang="pt-BR" class="lenis lenis-smooth max-w-screen overflow-x-hidden">
 
-        <!-- Css -->
-        <link rel="stylesheet" href="./css/main.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página comercial para uma agencia de desenvolvimento de sites" />
+    <title>Elim Prime Odonto | Você com um sorriso perfeito!</title>
+    <link rel="icon" type="image/x-icon" href="/assets/svg/logo-revendcell.svg" />
 
-        <link
-            rel="preload"
-            href="./fonts/fonts.css"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
-        />
-        <noscript>
-            <link rel="stylesheet" href="./fonts/fonts.css" />
-        </noscript>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/main.css" />
 
-        <link
-            rel="preload"
-            href="./css/plugins.css"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
-        />
-        <noscript>
-            <link rel="stylesheet" href="./css/plugins.css" />
-        </noscript>
+    <link rel="preload" href="./fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet" href="./fonts/fonts.css" />
+    </noscript>
 
-        <!-- Pré-conecte para melhorar a latência -->
-        <link rel="preconnect" href="https://maps.googleapis.com" crossorigin />
-        <link rel="preconnect" href="https://maps.gstatic.com" crossorigin />
+    <link rel="preload" href="./css/plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/plugins.css" />
+    </noscript>
 
-        <!-- dns-prefetch para fallback em navegadores que não suportam preconnect -->
-        <link rel="dns-prefetch" href="https://maps.googleapis.com" />
-        <link rel="dns-prefetch" href="https://maps.gstatic.com" />
+    <!-- Pré-conecte para melhorar a latência -->
+    <link rel="preconnect" href="https://maps.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://maps.gstatic.com" crossorigin />
 
-        <link
-            rel="preload"
-            fetchpriority="high"
-            as="image"
-            href="./assets/webp/hero-bg.webp"
-            imagesrcset="
+    <!-- dns-prefetch para fallback em navegadores que não suportam preconnect -->
+    <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+    <link rel="dns-prefetch" href="https://maps.gstatic.com" />
+
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/webp/hero-bg.webp" imagesrcset="
         ./assets/webp/hero-bg_ndqhro_c_scale,w_200.webp   200w,
         ./assets/webp/hero-bg_ndqhro_c_scale,w_339.webp   339w,
         ./assets/webp/hero-bg_ndqhro_c_scale,w_445.webp   445w,
@@ -70,243 +49,132 @@
         ./assets/webp/hero-bg_ndqhro_c_scale,w_1282.webp 1282w,
         ./assets/webp/hero-bg_ndqhro_c_scale,w_1322.webp 1322w,
         ./assets/webp/hero-bg_ndqhro_c_scale,w_1361.webp 1361w,
-        ./assets/webp/hero-bg_ndqhro_c_scale,w_1400.webp 1400w"
-        />
-    </head>
+        ./assets/webp/hero-bg_ndqhro_c_scale,w_1400.webp 1400w" />
+</head>
 
-    <body>
-        <!-- Header -->
-        <header>
-            <div class="container relative">
-                <nav class="flex flex-row items-center justify-between">
-                    <a href="/"
-                        ><img
-                            src="/assets/webp/site-logo.webp"
-                            class="max-sm:w-8/12"
-                            alt="Logo do Site com a escrita Elim Prime Odonto em fonte sarifada."
-                            width="152"
-                            height="68"
-                        />
-                        <span class="sr-only">Logo do Site</span>
-                    </a>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container relative">
+            <nav class="flex flex-row items-center justify-between">
+                <a href="/"><img src="/assets/webp/site-logo.webp" class="max-sm:w-8/12"
+                        alt="Logo do Site com a escrita Elim Prime Odonto em fonte sarifada." width="152" height="68" />
+                    <span class="sr-only">Logo do Site</span>
+                </a>
 
-                    <ul class="flex justify-between gap-8 max-lg:hidden">
-                        <li>
-                            <a
-                                class="underline-offset-2 hover:underline"
-                                href="#inicio"
-                            >
-                                Início
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="underline-offset-2 hover:underline"
-                                href="#about"
-                            >
-                                Sobre
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="underline-offset-2 hover:underline"
-                                href="#before"
-                            >
-                                Antes e Depois
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="underline-offset-2 hover:underline"
-                                href="#contact"
-                            >
-                                Contato
-                            </a>
-                        </li>
-                    </ul>
+                <ul class="flex justify-between gap-8 max-lg:hidden">
+                    <li>
+                        <a class="underline-offset-2 hover:underline" href="#inicio">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a class="underline-offset-2 hover:underline" href="#about">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a class="underline-offset-2 hover:underline" href="#before">
+                            Antes e Depois
+                        </a>
+                    </li>
+                    <li>
+                        <a class="underline-offset-2 hover:underline" href="#contact">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
 
-                    <div class="flex items-center justify-between gap-8">
-                        <div
-                            class="flex w-fit shrink-0 items-center justify-center gap-4 md:gap-8"
-                        >
-                            <a
-                                class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
-                                href="https://www.facebook.com/profile.php?id=100092396007966"
-                                target="_blank"
-                            >
-                                <img
-                                    class="size-5 object-contain"
-                                    src="/assets/svg/Facebook.svg"
-                                    alt="Facebook Item"
-                                    width="10"
-                                    height="18"
-                                />
-                                <span class="sr-only">Nosso Facebook</span>
-                            </a>
-                            <a
-                                class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
-                                href="https://www.facebook.com/profile.php?id=100092396007966"
-                                target="_blank"
-                            >
-                                <img
-                                    class="size-5 object-contain"
-                                    src="/assets/svg/Instagram.svg"
-                                    alt="Instagram Item"
-                                    width="15"
-                                    height="16"
-                                />
-                                <span class="sr-only">Nosso Instagram</span>
-                            </a>
-                            <a
-                                class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
-                                href="https://www.facebook.com/profile.php?id=100092396007966"
-                                target="_blank"
-                            >
-                                <img
-                                    class="size-5 object-contain"
-                                    src="/assets/svg/TikTok.svg"
-                                    alt="TikTok Item"
-                                    width="15"
-                                    height="18"
-                                />
-                                <span class="sr-only">Nosso TikTok</span>
-                            </a>
-                            <a
-                                class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
-                                href="https://www.facebook.com/profile.php?id=100092396007966"
-                                target="_blank"
-                            >
-                                <img
-                                    class="size-5 object-contain"
-                                    src="/assets/svg/Whatsapp.svg"
-                                    alt="Whatsapp Item"
-                                    width="15"
-                                    height="16"
-                                />
-                                <span class="sr-only">Nosso Whatsapp</span>
-                            </a>
-                        </div>
+                <div class="flex items-center justify-between gap-8">
+                    <div class="flex w-fit shrink-0 items-center justify-center gap-4 md:gap-8">
+                        <a class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
+                            href="https://www.facebook.com/profile.php?id=100092396007966" target="_blank">
+                            <img class="size-5 object-contain" src="/assets/svg/Facebook.svg" alt="Facebook Item"
+                                width="10" height="18" />
+                            <span class="sr-only">Nosso Facebook</span>
+                        </a>
+                        <a class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
+                            href="https://www.facebook.com/profile.php?id=100092396007966" target="_blank">
+                            <img class="size-5 object-contain" src="/assets/svg/Instagram.svg" alt="Instagram Item"
+                                width="15" height="16" />
+                            <span class="sr-only">Nosso Instagram</span>
+                        </a>
+                        <a class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
+                            href="https://www.facebook.com/profile.php?id=100092396007966" target="_blank">
+                            <img class="size-5 object-contain" src="/assets/svg/TikTok.svg" alt="TikTok Item" width="15"
+                                height="18" />
+                            <span class="sr-only">Nosso TikTok</span>
+                        </a>
+                        <a class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
+                            href="https://www.facebook.com/profile.php?id=100092396007966" target="_blank">
+                            <img class="size-5 object-contain" src="/assets/svg/Whatsapp.svg" alt="Whatsapp Item"
+                                width="15" height="16" />
+                            <span class="sr-only">Nosso Whatsapp</span>
+                        </a>
+                    </div>
 
-                        <div class="mobile flex lg:hidden" id="mobile-header">
-                            <button
-                                class="*:fill-white"
-                                type="button"
-                                aria-label="Menu"
-                                aria-controls="navigation"
-                                onclick="openMobileSidebar()"
-                            >
-                                <svg
-                                    width="26"
-                                    height="20"
-                                    viewBox="0 0 26 20"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <rect
-                                        y="0.43457"
-                                        width="26"
-                                        height="2.36364"
-                                    />
-                                    <rect
-                                        x="4.72754"
-                                        y="8.79834"
-                                        width="16.5455"
-                                        height="2.36364"
-                                    />
-                                    <rect
-                                        y="17.1616"
-                                        width="26"
-                                        height="2.36364"
-                                    />
+                    <div class="mobile flex lg:hidden" id="mobile-header">
+                        <button class="*:fill-white" type="button" aria-label="Menu" aria-controls="navigation"
+                            onclick="openMobileSidebar()">
+                            <svg width="26" height="20" viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.43457" width="26" height="2.36364" />
+                                <rect x="4.72754" y="8.79834" width="16.5455" height="2.36364" />
+                                <rect y="17.1616" width="26" height="2.36364" />
+                            </svg>
+                        </button>
+
+                        <nav class="fixed left-0 top-0 z-20 h-dvh w-full bg-acent" id="navigation"
+                            style="display: none">
+                            <button class="absolute right-6 top-6 cursor-pointer *:fill-white" type="button"
+                                aria-label="Menu" aria-controls="navigation" onclick="closeMobileSidebar()"
+                                id="closeButton">
+                                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="1.41406" width="2" height="26" transform="rotate(-45 0 1.41406)" />
+                                    <rect x="18.3848" width="2" height="26" transform="rotate(45 18.3848 0)" />
                                 </svg>
                             </button>
 
-                            <nav
-                                class="fixed left-0 top-0 z-20 h-dvh w-full bg-acent"
-                                id="navigation"
-                                style="display: none"
-                            >
-                                <button
-                                    class="absolute right-6 top-6 cursor-pointer *:fill-white"
-                                    type="button"
-                                    aria-label="Menu"
-                                    aria-controls="navigation"
-                                    onclick="closeMobileSidebar()"
-                                    id="closeButton"
-                                >
-                                    <svg
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <rect
-                                            y="1.41406"
-                                            width="2"
-                                            height="26"
-                                            transform="rotate(-45 0 1.41406)"
-                                        />
-                                        <rect
-                                            x="18.3848"
-                                            width="2"
-                                            height="26"
-                                            transform="rotate(45 18.3848 0)"
-                                        />
-                                    </svg>
-                                </button>
-
-                                <div>
-                                    <ul
-                                        class="relative flex h-[100dvh] flex-col justify-center divide-y divide-solid divide-off divide-opacity-40 p-10"
-                                        onclick="closeMobileSidebar()"
-                                    >
-                                        <li>
-                                            <a
-                                                class="block bg-acent p-4 text-white hover:bg-off hover:bg-opacity-20"
-                                                href="#inicio"
-                                            >
-                                                Início
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="block bg-acent p-4 text-white hover:bg-off hover:bg-opacity-20"
-                                                href="#about"
-                                            >
-                                                Sobre
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="block bg-acent p-4 text-white hover:bg-off hover:bg-opacity-20"
-                                                href="#before"
-                                            >
-                                                Antes e Depois
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="block bg-acent p-4 text-white hover:bg-off hover:bg-opacity-20"
-                                                href="#contact"
-                                            >
-                                                Contato
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
+                            <div>
+                                <ul class="relative flex h-[100dvh] flex-col justify-center divide-y divide-solid divide-off divide-opacity-40 p-10"
+                                    onclick="closeMobileSidebar()">
+                                    <li>
+                                        <a class="block bg-acent p-4 text-white hover:bg-off hover:bg-opacity-20"
+                                            href="#inicio">
+                                            Início
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="block bg-acent p-4 text-white hover:bg-off hover:bg-opacity-20"
+                                            href="#about">
+                                            Sobre
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="block bg-acent p-4 text-white hover:bg-off hover:bg-opacity-20"
+                                            href="#before">
+                                            Antes e Depois
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="block bg-acent p-4 text-white hover:bg-off hover:bg-opacity-20"
+                                            href="#contact">
+                                            Contato
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
-                </nav>
-            </div>
-        </header>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-        <!-- Content -->
-        <main class="bg-off">
-            <section class="relative" id="inicio">
-                <img
-                    class="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-                    src="./assets/webp/hero-bg.webp"
-                    srcset="
+    <!-- Content -->
+    <main class="bg-off">
+        <section class="relative" id="inicio">
+            <img class="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
+                src="./assets/webp/hero-bg.webp" srcset="
                         ./assets/webp/hero-bg_ndqhro_c_scale,w_200.webp   200w,
                         ./assets/webp/hero-bg_ndqhro_c_scale,w_339.webp   339w,
                         ./assets/webp/hero-bg_ndqhro_c_scale,w_445.webp   445w,
@@ -327,877 +195,545 @@
                         ./assets/webp/hero-bg_ndqhro_c_scale,w_1322.webp 1322w,
                         ./assets/webp/hero-bg_ndqhro_c_scale,w_1361.webp 1361w,
                         ./assets/webp/hero-bg_ndqhro_c_scale,w_1400.webp 1400w
-                    "
-                    sizes="(max-width: 600px) 100vw, 1440px"
-                    alt="background da seção. Sorriso com dentes perfeitos."
-                    width="1440"
-                    height="900"
-                />
+                    " sizes="(max-width: 600px) 100vw, 1440px" alt="background da seção. Sorriso com dentes perfeitos."
+                width="1440" height="900" />
+            <div class="absolute left-0 top-0 h-full w-full bg-gradient opacity-30"></div>
+            <div
+                class="container relative flex flex-col items-center justify-center gap-0 py-32 *:text-white max-md:text-center md:items-start lg:h-[730px] lg:py-20">
+                <img src="./assets/webp/site-logo.webp" alt="Logo da Elim Prime" width="152" height="68" />
+                <h1 class="pt-10 text-[12dvw] font-normal leading-none md:text-[80px]">
+                    Transformando o<br />seu sorriso
+                </h1>
+                <p class="max-lg:text py-3 leading-8">
+                    Com as facetas em resina da Elim Prime, você pode
+                    conquistar um sorriso perfeito.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
+                    class="btn white group relative mt-8 flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10">
+                    Agendar Consulta
+                    <div
+                        class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-acent fill-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-full group-active:bg-black-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13">
+                            <path
+                                d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" data-aos="fade-left">
+            <div class="container py-16">
+                <h2 class="sr-only pb-10 text-center">
+                    Aqui você poderá ter:
+                </h2>
                 <div
-                    class="absolute left-0 top-0 h-full w-full bg-gradient opacity-30"
-                ></div>
-                <div
-                    class="container relative flex flex-col items-center justify-center gap-0 py-32 *:text-white max-md:text-center md:items-start lg:h-[730px] lg:py-20"
-                >
-                    <img
-                        src="./assets/webp/site-logo.webp"
-                        alt="Logo da Elim Prime"
-                        width="152"
-                        height="68"
-                    />
-                    <h1
-                        class="pt-10 text-[12dvw] font-normal leading-none md:text-[80px]"
-                    >
-                        Transformando o<br />seu sorriso
-                    </h1>
-                    <p class="max-lg:text py-3 leading-8">
-                        Com as facetas em resina da Elim Prime, você pode
-                        conquistar um sorriso perfeito.
+                    class="grid grid-flow-row grid-cols-1 items-stretch gap-10 divide-solid divide-[#DCD7D4] md:grid-cols-2 lg:grid-cols-3 lg:divide-x">
+                    <div class="flex flex-col items-center px-10 *:text-center">
+                        <img src="./assets/svg/Sorriso Perfeito.svg" alt="Ícone de dente" loading="lazy" width="71"
+                            height="90" />
+                        <h3 class="font-medium">Alinhamento dental</h3>
+                        <p>
+                            Corrija problemas de alinhamento sem uso de
+                            aparelho.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center px-10 *:text-center">
+                        <img src="./assets/svg/Dentes Alinhados.svg" alt="Ícone de dente" loading="lazy" width="71"
+                            height="90" />
+                        <h3 class="font-medium">Sorriso mais bonito</h3>
+                        <p>Sem espaçamentos ou dentes quebrados</p>
+                    </div>
+                    <div class="flex flex-col items-center px-10 *:text-center">
+                        <img src="./assets/svg/Dentes como novos.svg" alt="Ícone de dente" loading="lazy" width="71"
+                            height="90" />
+                        <h3 class="font-medium">Dentes perfeitos</h3>
+                        <p>Corriga a cor e o formato de seus dentes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-right">
+            <div
+                class="container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row lg:justify-between">
+                <div class="flex-1">
+                    <span class="font-medium uppercase tracking-widest text-acent">
+                        SOBRE
+                    </span>
+                    <h2>Paixão em transformar sorrisos</h2>
+                    <p class="py-2 font-normal">
+                        Entendemos que a experiência do paciente vai além do
+                        tratamento. Por isso, nosso ambiente clínico é
+                        projetado para ser acolhedor e acessível a todos,
+                        incluindo pacientes com deficiência motora e
+                        cadeirantes, garantindo que todos que nos procuram
+                        sintam-se respeitados, confortáveis e seguros.<br />
+                        Na Elim Prime, você encontra mais do que uma clínica
+                        odontológica; encontra um parceiro dedicado à
+                        excelência em estética dental e ao seu bem-estar.
+                        Venha nos conhecer e descubra como podemos ajudar
+                        você a conquistar o sorriso dos seus sonhos.
                     </p>
-                    <a
-                        href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
-                        class="btn white group relative mt-8 flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10"
-                    >
+
+                    <a href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
+                        class="btn acent group relative mt-10 flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10">
                         Agendar Consulta
                         <div
-                            class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-acent fill-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-full group-active:bg-black-800"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="14"
-                                height="13"
-                                viewBox="0 0 14 13"
-                            >
+                            class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-white fill-acent transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-[101%] group-active:bg-black-800 group-active:fill-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13">
                                 <path
-                                    d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z"
-                                />
+                                    d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z" />
                             </svg>
                         </div>
                     </a>
                 </div>
-            </section>
+                <div class="">
+                    <img src="/assets/webp/group-3.webp"
+                        alt="Foto antes e depois de dois clientes que colocaram Facetas dentais." loading="lazy"
+                        width="470" height="463" />
+                </div>
+            </div>
+        </section>
 
-            <section id="about" data-aos="fade-left">
-                <div class="container py-16">
-                    <h2 class="sr-only pb-10 text-center">
-                        Aqui você poderá ter:
-                    </h2>
-                    <div
-                        class="grid grid-flow-row grid-cols-1 items-stretch gap-10 divide-solid divide-[#DCD7D4] md:grid-cols-2 lg:grid-cols-3 lg:divide-x"
-                    >
+        <!-- Diferenciais -->
+        <section class="container px-0 py-10" data-aos="fade-right">
+            <h2 class="mx-auto max-w-96 px-4 text-center">
+                Por que escolher a Elim Prime Odonto?
+            </h2>
+            <div class="swiper choice">
+                <div class="swiper-wrapper py-10">
+                    <div class="swiper-slide">
                         <div
-                            class="flex flex-col items-center px-10 *:text-center"
-                        >
-                            <img
-                                src="./assets/svg/Sorriso Perfeito.svg"
-                                alt="Ícone de dente"
-                                loading="lazy"
-                                width="71"
-                                height="90"
-                            />
-                            <h3 class="font-medium">Alinhamento dental</h3>
-                            <p>
-                                Corrija problemas de alinhamento sem uso de
-                                aparelho.
-                            </p>
+                            class="grid grid-flow-row items-stretch overflow-hidden rounded-md bg-off-400 sm:grid-cols-2">
+                            <div class="flex flex-col justify-between p-6 lg:p-8">
+                                <img src="./assets/svg/Dentes como novos.svg" class="object-contain"
+                                    alt="Ícone de sorriso" width="71" height="90" />
+
+                                <div class="shrink-0 space-y-1 sm:w-48">
+                                    <h3 class="text-black">
+                                        Minimamente Invasivo
+                                    </h3>
+                                    <p>
+                                        <small>
+                                            Preserve o máximo da
+                                            naturalidade dos seus dentes.
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="/assets/webp/minimamente-invasivo.webp" loading="lazy" alt="Sorriso" width="427"
+                                height="458" />
                         </div>
+                    </div>
+                    <div class="swiper-slide">
                         <div
-                            class="flex flex-col items-center px-10 *:text-center"
-                        >
-                            <img
-                                src="./assets/svg/Dentes Alinhados.svg"
-                                alt="Ícone de dente"
-                                loading="lazy"
-                                width="71"
-                                height="90"
-                            />
-                            <h3 class="font-medium">Sorriso mais bonito</h3>
-                            <p>Sem espaçamentos ou dentes quebrados</p>
+                            class="grid grid-flow-row items-stretch overflow-hidden rounded-md bg-off-400 sm:grid-cols-2">
+                            <div class="flex flex-col justify-between p-6 lg:p-8">
+                                <img src="./assets/svg/Sorriso Perfeito.svg" class="object-contain"
+                                    alt="Ícone de sorriso" width="71" height="90" />
+
+                                <div class="shrink-0 space-y-1 sm:w-48">
+                                    <h3 class="text-black">
+                                        Alta qualidade
+                                    </h3>
+                                    <p>
+                                        <small>
+                                            Utilizamos somente as melhores
+                                            resinas do mercado
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="/assets/webp/sorriso-perfeito.webp" loading="lazy" alt="Sorriso" width="428"
+                                height="454" />
                         </div>
+                    </div>
+
+                    <div class="swiper-slide">
                         <div
-                            class="flex flex-col items-center px-10 *:text-center"
-                        >
-                            <img
-                                src="./assets/svg/Dentes como novos.svg"
-                                alt="Ícone de dente"
-                                loading="lazy"
-                                width="71"
-                                height="90"
-                            />
-                            <h3 class="font-medium">Dentes perfeitos</h3>
-                            <p>Corriga a cor e o formato de seus dentes</p>
+                            class="grid grid-flow-row items-stretch overflow-hidden rounded-md bg-off-400 sm:grid-cols-2">
+                            <div class="flex flex-col justify-between p-6 lg:p-8">
+                                <img src="./assets/svg/Dentes como novos.svg" class="object-contain"
+                                    alt="Ícone de sorriso" width="71" height="90" />
+
+                                <div class="shrink-0 space-y-1 sm:w-48">
+                                    <h3 class="text-black">Durabilidade</h3>
+                                    <p>
+                                        <small>
+                                            Com materiais de qualidade e
+                                            manutenção basica, suas facetas
+                                            vão durar anos.
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="/assets/webp/alta-qualidade.webp" loading="lazy" alt="Sorriso" width="427"
+                                height="458" />
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section data-aos="fade-right">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
+                class="btn white group relative mx-auto flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10">
+                Agendar Consulta
                 <div
-                    class="container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row lg:justify-between"
-                >
-                    <div class="flex-1">
-                        <span
-                            class="font-medium uppercase tracking-widest text-acent"
-                        >
-                            SOBRE
-                        </span>
-                        <h2>Paixão em transformar sorrisos</h2>
-                        <p class="py-2 font-normal">
-                            Entendemos que a experiência do paciente vai além do
-                            tratamento. Por isso, nosso ambiente clínico é
-                            projetado para ser acolhedor e acessível a todos,
-                            incluindo pacientes com deficiência motora e
-                            cadeirantes, garantindo que todos que nos procuram
-                            sintam-se respeitados, confortáveis e seguros.<br />
-                            Na Elim Prime, você encontra mais do que uma clínica
-                            odontológica; encontra um parceiro dedicado à
-                            excelência em estética dental e ao seu bem-estar.
-                            Venha nos conhecer e descubra como podemos ajudar
-                            você a conquistar o sorriso dos seus sonhos.
-                        </p>
+                    class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-acent fill-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-full group-active:bg-black-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13">
+                        <path
+                            d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z" />
+                    </svg>
+                </div>
+            </a>
+        </section>
 
-                        <a
-                            href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
-                            class="btn acent group relative mt-10 flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10"
-                        >
-                            Agendar Consulta
+        <!-- Video Clientes -->
+        <section class="container px-0 py-10" id="before" data-aos="fade-right">
+            <span class="block px-4 text-center font-medium uppercase tracking-widest text-acent">
+                TRANSFORMAÇÕES
+            </span>
+            <h2 class="mx-auto max-w-screen-md px-4 text-center">
+                Fornecemos uma experiência transformadora para cada um de
+                nossos clientes.
+            </h2>
+            <div class="swiper testemonies max-w-screen-2xl">
+                <div class="swiper-wrapper py-10">
+                    <div class="swiper-slide">
+                        <iframe class="aspect-[9/16] w-full"
+                            src="https://www.youtube-nocookie.com/embed/YKY_fjDKZA4?si=v9NLXtsNiRAy3hJw&amp;controls=0"
+                            title="YouTube video player" frameborder="0" loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <iframe class="aspect-[9/16] w-full"
+                            src="https://www.youtube-nocookie.com/embed/z8B7jqOK4go?si=9M3BIBUYXButKmgF&amp;controls=0"
+                            title="YouTube video player" frameborder="0" loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <iframe class="aspect-[9/16] w-full"
+                            src="https://www.youtube-nocookie.com/embed/cWCqC9Ms_fQ?si=sUoGzTyj-XqUQD7C&amp;controls=0"
+                            title="YouTube video player" frameborder="0" loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div
+                    class="swiper-button-prev rounded-full bg-off px-5 py-2 after:-ml-1 after:scale-50 after:text-acent">
+                </div>
+                <div
+                    class="swiper-button-next rounded-full bg-off px-5 py-2 after:-mr-1 after:scale-50 after:text-acent">
+                </div>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
+                class="btn white group relative mx-auto flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10">
+                Agendar Consulta
+                <div
+                    class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-acent fill-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-full group-active:bg-black-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13">
+                        <path
+                            d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z" />
+                    </svg>
+                </div>
+            </a>
+        </section>
+
+        <!-- Antes/Depoiss -->
+        <section class="container px-0 py-10" data-aos="fade-right">
+            <h2 class="mx-auto max-w-96 px-4 text-center">
+                Sorrisos mudam vidas!
+            </h2>
+            <p class="mx-auto max-w-screen-md px-4 pt-2 text-center sm:pt-4">
+                Confira o antes e depois de pessoas que passaram a sorrir
+                melhor com a Elim Prime!
+            </p>
+            <div class="swiper transformations my-10">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/assets/webp/elimprimeodonto(1).webp" alt="Foto de cliente, Antes e Depois"
+                            loading="lazy" width="376" height="376" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/webp/elimprimeodonto(2).webp" alt="Foto de cliente, Antes e Depois"
+                            loading="lazy" width="376" height="376" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/webp/elimprimeodonto(3).webp" alt="Foto de cliente, Antes e Depois"
+                            loading="lazy" width="376" height="376" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/webp/elimprimeodonto(4).webp" alt="Foto de cliente, Antes e Depois"
+                            loading="lazy" width="376" height="376" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/webp/elimprimeodonto(5).webp" alt="Foto de cliente, Antes e Depois"
+                            loading="lazy" width="376" height="376" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/webp/elimprimeodonto(6).webp" alt="Foto de cliente, Antes e Depois"
+                            loading="lazy" width="376" height="376" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/webp/elimprimeodonto(7).webp" alt="Foto de cliente, Antes e Depois"
+                            loading="lazy" width="376" height="376" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/webp/elimprimeodonto(8).webp" alt="Foto de cliente, Antes e Depois"
+                            loading="lazy" width="376" height="376" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/assets/webp/elimprimeodonto(9).webp" alt="Foto de cliente, Antes e Depois"
+                            loading="lazy" width="376" height="376" />
+                    </div>
+                </div>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
+                class="btn white group relative mx-auto flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10">
+                Agendar Consulta
+                <div
+                    class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-acent fill-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-full group-active:bg-black-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13">
+                        <path
+                            d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z" />
+                    </svg>
+                </div>
+            </a>
+        </section>
+
+        <!-- FaQ -->
+        <section data-aos="fade-up">
+            <div class="container items-center gap-32 space-y-8 py-10 md:flex">
+                <h2 class="w-full text-center md:max-w-screen-sm md:text-start">
+                    Perguntas <br class="hidden md:inline" />Frequentes
+                </h2>
+
+                <div class="accordion divide-y divide-solid divide-[#DCD7D4]">
+                    <div class="accordion-item px-5">
+                        <div class="accordion-header flex items-center justify-between">
+                            <h3>O que são facetas dentais?</h3>
                             <div
-                                class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-white fill-acent transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-[101%] group-active:bg-black-800 group-active:fill-white"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="14"
-                                    height="13"
-                                    viewBox="0 0 14 13"
-                                >
+                                class="grid size-8 shrink-0 place-content-center overflow-hidden rounded-full bg-acent p-1 *:size-4">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z"
-                                    />
+                                        d="M12.2197 5.29736C12.6846 5.29736 13.0947 5.70752 13.0947 6.17236V7.04736C13.0947 7.53955 12.6846 7.92236 12.2197 7.92236H8.28223V11.8599C8.28223 12.3521 7.87207 12.7349 7.40723 12.7349H6.53223C6.04004 12.7349 5.65723 12.3521 5.65723 11.8599V7.92236H1.71973C1.22754 7.92236 0.844727 7.53955 0.844727 7.04736V6.17236C0.844727 5.70752 1.22754 5.29736 1.71973 5.29736H5.65723V1.35986C5.65723 0.89502 6.04004 0.484863 6.53223 0.484863H7.40723C7.87207 0.484863 8.28223 0.89502 8.28223 1.35986V5.29736H12.2197Z"
+                                        fill="white" />
                                 </svg>
                             </div>
-                        </a>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                Facetas dentais são camadas finas de resina
+                                (ou porcelana) aplicadas sobre os dentes
+                                para melhorar o seu sorriso. Elas são
+                                indicadas para corrigir dentes manchados,
+                                desgastados, desalinhados, com espaçamentos
+                                e para quem deseja um sorriso mais
+                                harmonioso.
+                            </p>
+                        </div>
                     </div>
-                    <div class="">
-                        <img
-                            src="/assets/webp/group-3.webp"
-                            alt="Foto antes e depois de dois clientes que colocaram Facetas dentais."
-                            loading="lazy"
-                            width="470"
-                            height="463"
-                        />
-                    </div>
-                </div>
-            </section>
 
-            <!-- Diferenciais -->
-            <section class="container px-0 py-10" data-aos="fade-right">
-                <h2 class="mx-auto max-w-96 px-4 text-center">
-                    Por que escolher a Elim Prime Odonto?
-                </h2>
-                <div class="swiper choice">
-                    <div class="swiper-wrapper py-10">
-                        <div class="swiper-slide">
+                    <div class="accordion-item px-5">
+                        <div class="accordion-header flex items-center justify-between">
+                            <h3>As facetas dentais duram quanto tempo?</h3>
                             <div
-                                class="grid grid-flow-row items-stretch overflow-hidden rounded-md bg-off-400 sm:grid-cols-2"
-                            >
-                                <div
-                                    class="flex flex-col justify-between p-6 lg:p-8"
-                                >
-                                    <img
-                                        src="./assets/svg/Dentes como novos.svg"
-                                        class="object-contain"
-                                        alt="Ícone de sorriso"
-                                        width="71"
-                                        height="90"
-                                    />
-
-                                    <div class="shrink-0 space-y-1 sm:w-48">
-                                        <h3 class="text-black">
-                                            Minimamente Invasivo
-                                        </h3>
-                                        <p>
-                                            <small>
-                                                Preserve o máximo da
-                                                naturalidade dos seus dentes.
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                                <img
-                                    src="/assets/webp/minimamente-invasivo.webp"
-                                    loading="lazy"
-                                    alt="Sorriso"
-                                    width="427"
-                                    height="458"
-                                />
+                                class="grid size-8 shrink-0 place-content-center overflow-hidden rounded-full bg-acent p-1 *:size-4">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.2197 5.29736C12.6846 5.29736 13.0947 5.70752 13.0947 6.17236V7.04736C13.0947 7.53955 12.6846 7.92236 12.2197 7.92236H8.28223V11.8599C8.28223 12.3521 7.87207 12.7349 7.40723 12.7349H6.53223C6.04004 12.7349 5.65723 12.3521 5.65723 11.8599V7.92236H1.71973C1.22754 7.92236 0.844727 7.53955 0.844727 7.04736V6.17236C0.844727 5.70752 1.22754 5.29736 1.71973 5.29736H5.65723V1.35986C5.65723 0.89502 6.04004 0.484863 6.53223 0.484863H7.40723C7.87207 0.484863 8.28223 0.89502 8.28223 1.35986V5.29736H12.2197Z"
+                                        fill="white" />
+                                </svg>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="accordion-content">
+                            <p>
+                                Facetas podem durar mais de 10 anos. Tudo
+                                depende dos materiais usados e do cuidado
+                                com a saúde bucal. Aqui na Elim Prime
+                                Odonto, nós sempre trabalhamos com os
+                                melhores materiais, profissionais e
+                                tecnologia de ponta!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item px-5">
+                        <div class="accordion-header flex items-center justify-between">
+                            <h3>
+                                Como é o procedimento de aplicação da
+                                faceta?
+                            </h3>
                             <div
-                                class="grid grid-flow-row items-stretch overflow-hidden rounded-md bg-off-400 sm:grid-cols-2"
-                            >
-                                <div
-                                    class="flex flex-col justify-between p-6 lg:p-8"
-                                >
-                                    <img
-                                        src="./assets/svg/Sorriso Perfeito.svg"
-                                        class="object-contain"
-                                        alt="Ícone de sorriso"
-                                        width="71"
-                                        height="90"
-                                    />
-
-                                    <div class="shrink-0 space-y-1 sm:w-48">
-                                        <h3 class="text-black">
-                                            Alta qualidade
-                                        </h3>
-                                        <p>
-                                            <small>
-                                                Utilizamos somente as melhores
-                                                resinas do mercado
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                                <img
-                                    src="/assets/webp/sorriso-perfeito.webp"
-                                    loading="lazy"
-                                    alt="Sorriso"
-                                    width="428"
-                                    height="454"
-                                />
+                                class="grid size-8 shrink-0 place-content-center overflow-hidden rounded-full bg-acent p-1 *:size-4">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.2197 5.29736C12.6846 5.29736 13.0947 5.70752 13.0947 6.17236V7.04736C13.0947 7.53955 12.6846 7.92236 12.2197 7.92236H8.28223V11.8599C8.28223 12.3521 7.87207 12.7349 7.40723 12.7349H6.53223C6.04004 12.7349 5.65723 12.3521 5.65723 11.8599V7.92236H1.71973C1.22754 7.92236 0.844727 7.53955 0.844727 7.04736V6.17236C0.844727 5.70752 1.22754 5.29736 1.71973 5.29736H5.65723V1.35986C5.65723 0.89502 6.04004 0.484863 6.53223 0.484863H7.40723C7.87207 0.484863 8.28223 0.89502 8.28223 1.35986V5.29736H12.2197Z"
+                                        fill="white" />
+                                </svg>
                             </div>
                         </div>
+                        <div class="accordion-content">
+                            <p>
+                                As facetas de resina são aplicadas por cima
+                                dos dentes, em forma pastosa, então é
+                                esculpida e endurecida com
+                                fotopolimerização.
+                            </p>
+                        </div>
+                    </div>
 
-                        <div class="swiper-slide">
+                    <div class="accordion-item px-5">
+                        <div class="accordion-header flex items-center justify-between">
+                            <h3>
+                                É necessário algum cuidado especial após a
+                                aplicação de facetas?
+                            </h3>
                             <div
-                                class="grid grid-flow-row items-stretch overflow-hidden rounded-md bg-off-400 sm:grid-cols-2"
-                            >
-                                <div
-                                    class="flex flex-col justify-between p-6 lg:p-8"
-                                >
-                                    <img
-                                        src="./assets/svg/Dentes como novos.svg"
-                                        class="object-contain"
-                                        alt="Ícone de sorriso"
-                                        width="71"
-                                        height="90"
-                                    />
-
-                                    <div class="shrink-0 space-y-1 sm:w-48">
-                                        <h3 class="text-black">Durabilidade</h3>
-                                        <p>
-                                            <small>
-                                                Com materiais de qualidade e
-                                                manutenção basica, suas facetas
-                                                vão durar anos.
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                                <img
-                                    src="/assets/webp/alta-qualidade.webp"
-                                    loading="lazy"
-                                    alt="Sorriso"
-                                    width="427"
-                                    height="458"
-                                />
+                                class="grid size-8 shrink-0 place-content-center overflow-hidden rounded-full bg-acent p-1 *:size-4">
+                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.2197 5.29736C12.6846 5.29736 13.0947 5.70752 13.0947 6.17236V7.04736C13.0947 7.53955 12.6846 7.92236 12.2197 7.92236H8.28223V11.8599C8.28223 12.3521 7.87207 12.7349 7.40723 12.7349H6.53223C6.04004 12.7349 5.65723 12.3521 5.65723 11.8599V7.92236H1.71973C1.22754 7.92236 0.844727 7.53955 0.844727 7.04736V6.17236C0.844727 5.70752 1.22754 5.29736 1.71973 5.29736H5.65723V1.35986C5.65723 0.89502 6.04004 0.484863 6.53223 0.484863H7.40723C7.87207 0.484863 8.28223 0.89502 8.28223 1.35986V5.29736H12.2197Z"
+                                        fill="white" />
+                                </svg>
                             </div>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                As facetas também servem como uma proteção
+                                para o seu dente. Não sendo necessário
+                                nenhum cuidado diferente às recomendações
+                                dos dentistas.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a
-                    href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
-                    class="btn white group relative mx-auto flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10"
-                >
-                    Agendar Consulta
-                    <div
-                        class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-acent fill-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-full group-active:bg-black-800"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="14"
-                            height="13"
-                            viewBox="0 0 14 13"
-                        >
-                            <path
-                                d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z"
-                            />
-                        </svg>
-                    </div>
-                </a>
-            </section>
+            </div>
+        </section>
 
-            <!-- Video Clientes -->
-            <section
-                class="container px-0 py-10"
-                id="before"
-                data-aos="fade-right"
-            >
-                <span
-                    class="block px-4 text-center font-medium uppercase tracking-widest text-acent"
-                >
-                    TRANSFORMAÇÕES
-                </span>
-                <h2 class="mx-auto max-w-screen-md px-4 text-center">
-                    Fornecemos uma experiência transformadora para cada um de
-                    nossos clientes.
-                </h2>
-                <div class="swiper testemonies max-w-screen-2xl">
-                    <div class="swiper-wrapper py-10">
-                        <div class="swiper-slide">
-                            <iframe
-                                class="aspect-[9/16] w-full"
-                                src="https://www.youtube-nocookie.com/embed/YKY_fjDKZA4?si=v9NLXtsNiRAy3hJw&amp;controls=0"
-                                title="YouTube video player"
-                                frameborder="0"
-                                loading="lazy"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <iframe
-                                class="aspect-[9/16] w-full"
-                                src="https://www.youtube-nocookie.com/embed/z8B7jqOK4go?si=9M3BIBUYXButKmgF&amp;controls=0"
-                                title="YouTube video player"
-                                frameborder="0"
-                                loading="lazy"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <iframe
-                                class="aspect-[9/16] w-full"
-                                src="https://www.youtube-nocookie.com/embed/cWCqC9Ms_fQ?si=sUoGzTyj-XqUQD7C&amp;controls=0"
-                                title="YouTube video player"
-                                frameborder="0"
-                                loading="lazy"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                    </div>
-                    <div
-                        class="swiper-button-prev rounded-full bg-off px-5 py-2 after:-ml-1 after:scale-50 after:text-acent"
-                    ></div>
-                    <div
-                        class="swiper-button-next rounded-full bg-off px-5 py-2 after:-mr-1 after:scale-50 after:text-acent"
-                    ></div>
+        <section class="bg-acent">
+            <div class="container flex items-center justify-between py-0 max-md:flex-col max-md:gap-10 max-md:py-10"
+                data-aos="fade-down">
+                <div class="*:text-center *:text-white max-md:py-10 md:mr-40 md:w-fit md:*:text-start">
+                    <h3 class="pb-2">A CLÍNICA</h3>
+                    <h4 class="text-xl">Endereço</h4>
+                    <p class="py-1.5 text-base">
+                        R. Alm. Brasil, 685 - Sala 1106<br />Mooca - São
+                        Paulo
+                    </p>
+                    <p>
+                        <a class="underline underline-offset-4 transition-all duration-300 hover:underline-offset-2"
+                            href="https://maps.app.goo.gl/TwFQ4rx4BGqqUrP97" target="_blank">Ver mapa no google</a>
+                    </p>
+                    <h4 class="pb-2 pt-8">Contato</h4>
+                    <p>
+                        <a class="py-1.5 text-base underline underline-offset-4 transition-all duration-300 hover:underline-offset-2"
+                            href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20">(11)
+                            94373-4142</a>
+                    </p>
+                    <p>
+                        <a class="py-1.5 text-base underline underline-offset-4 transition-all duration-300 hover:underline-offset-2"
+                            href="mailto:contato@elimprimeodonto.com.br">contato@elimprimeodonto.com.br</a>
+                    </p>
                 </div>
-                <a
-                    href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
-                    class="btn white group relative mx-auto flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10"
-                >
-                    Agendar Consulta
-                    <div
-                        class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-acent fill-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-full group-active:bg-black-800"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="14"
-                            height="13"
-                            viewBox="0 0 14 13"
-                        >
-                            <path
-                                d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z"
-                            />
-                        </svg>
-                    </div>
-                </a>
-            </section>
-
-            <!-- Antes/Depoiss -->
-            <section class="container px-0 py-10" data-aos="fade-right">
-                <h2 class="mx-auto max-w-96 px-4 text-center">
-                    Sorrisos mudam vidas!
-                </h2>
-                <p
-                    class="mx-auto max-w-screen-md px-4 pt-2 text-center sm:pt-4"
-                >
-                    Confira o antes e depois de pessoas que passaram a sorrir
-                    melhor com a Elim Prime!
-                </p>
-                <div class="swiper transformations my-10">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img
-                                src="/assets/webp/elimprimeodonto(1).webp"
-                                alt="Foto de cliente, Antes e Depois"
-                                loading="lazy"
-                                width="376"
-                                height="376"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="/assets/webp/elimprimeodonto(2).webp"
-                                alt="Foto de cliente, Antes e Depois"
-                                loading="lazy"
-                                width="376"
-                                height="376"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="/assets/webp/elimprimeodonto(3).webp"
-                                alt="Foto de cliente, Antes e Depois"
-                                loading="lazy"
-                                width="376"
-                                height="376"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="/assets/webp/elimprimeodonto(4).webp"
-                                alt="Foto de cliente, Antes e Depois"
-                                loading="lazy"
-                                width="376"
-                                height="376"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="/assets/webp/elimprimeodonto(5).webp"
-                                alt="Foto de cliente, Antes e Depois"
-                                loading="lazy"
-                                width="376"
-                                height="376"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="/assets/webp/elimprimeodonto(6).webp"
-                                alt="Foto de cliente, Antes e Depois"
-                                loading="lazy"
-                                width="376"
-                                height="376"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="/assets/webp/elimprimeodonto(7).webp"
-                                alt="Foto de cliente, Antes e Depois"
-                                loading="lazy"
-                                width="376"
-                                height="376"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="/assets/webp/elimprimeodonto(8).webp"
-                                alt="Foto de cliente, Antes e Depois"
-                                loading="lazy"
-                                width="376"
-                                height="376"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="/assets/webp/elimprimeodonto(9).webp"
-                                alt="Foto de cliente, Antes e Depois"
-                                loading="lazy"
-                                width="376"
-                                height="376"
-                            />
-                        </div>
-                    </div>
+                <div>
+                    <iframe class="w-dvw" title="Location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.455568458669!2d-46.60815552462648!3d-23.552076278806222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5914f213324d%3A0xe8524c9f5f3ac23!2sElim%20Prime%20Odonto%20Clinic!5e0!3m2!1spt-BR!2sbr!4v1726062828564!5m2!1spt-BR!2sbr"
+                        height="480" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <a
-                    href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
-                    class="btn white group relative mx-auto flex w-72 items-center justify-start gap-2 text-center transition-all hover:gap-10"
-                >
-                    Agendar Consulta
-                    <div
-                        class="absolute right-2 top-1/2 grid size-[42px] -translate-y-1/2 place-content-center rounded-full bg-acent fill-white transition-all duration-500 ease-in-out group-hover:right-0 group-hover:size-full group-active:bg-black-800"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="14"
-                            height="13"
-                            viewBox="0 0 14 13"
-                        >
-                            <path
-                                d="M6.07031 1.58203L6.67188 0.980469C6.94531 0.734375 7.35547 0.734375 7.60156 0.980469L12.9336 6.28516C13.1797 6.55859 13.1797 6.96875 12.9336 7.21484L7.60156 12.5469C7.35547 12.793 6.94531 12.793 6.67188 12.5469L6.07031 11.9453C5.82422 11.6719 5.82422 11.2617 6.07031 10.9883L9.37891 7.84375H1.53125C1.14844 7.84375 0.875 7.57031 0.875 7.1875V6.3125C0.875 5.95703 1.14844 5.65625 1.53125 5.65625H9.37891L6.07031 2.53906C5.82422 2.26562 5.79688 1.85547 6.07031 1.58203Z"
-                            />
-                        </svg>
-                    </div>
-                </a>
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <!-- FaQ -->
-            <section data-aos="fade-up">
-                <div
-                    class="container items-center gap-32 space-y-8 py-10 md:flex"
-                >
-                    <h2
-                        class="w-full text-center md:max-w-screen-sm md:text-start"
-                    >
-                        Perguntas <br class="hidden md:inline" />Frequentes
-                    </h2>
-
-                    <div
-                        class="accordion divide-y divide-solid divide-[#DCD7D4]"
-                    >
-                        <div class="accordion-item px-5">
-                            <div
-                                class="accordion-header flex items-center justify-between"
-                            >
-                                <h3>O que são facetas dentais?</h3>
-                                <div
-                                    class="grid size-8 shrink-0 place-content-center overflow-hidden rounded-full bg-acent p-1 *:size-4"
-                                >
-                                    <svg
-                                        width="14"
-                                        height="13"
-                                        viewBox="0 0 14 13"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.2197 5.29736C12.6846 5.29736 13.0947 5.70752 13.0947 6.17236V7.04736C13.0947 7.53955 12.6846 7.92236 12.2197 7.92236H8.28223V11.8599C8.28223 12.3521 7.87207 12.7349 7.40723 12.7349H6.53223C6.04004 12.7349 5.65723 12.3521 5.65723 11.8599V7.92236H1.71973C1.22754 7.92236 0.844727 7.53955 0.844727 7.04736V6.17236C0.844727 5.70752 1.22754 5.29736 1.71973 5.29736H5.65723V1.35986C5.65723 0.89502 6.04004 0.484863 6.53223 0.484863H7.40723C7.87207 0.484863 8.28223 0.89502 8.28223 1.35986V5.29736H12.2197Z"
-                                            fill="white"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content">
-                                <p>
-                                    Facetas dentais são camadas finas de resina
-                                    (ou porcelana) aplicadas sobre os dentes
-                                    para melhorar o seu sorriso. Elas são
-                                    indicadas para corrigir dentes manchados,
-                                    desgastados, desalinhados, com espaçamentos
-                                    e para quem deseja um sorriso mais
-                                    harmonioso.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item px-5">
-                            <div
-                                class="accordion-header flex items-center justify-between"
-                            >
-                                <h3>As facetas dentais duram quanto tempo?</h3>
-                                <div
-                                    class="grid size-8 shrink-0 place-content-center overflow-hidden rounded-full bg-acent p-1 *:size-4"
-                                >
-                                    <svg
-                                        width="14"
-                                        height="13"
-                                        viewBox="0 0 14 13"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.2197 5.29736C12.6846 5.29736 13.0947 5.70752 13.0947 6.17236V7.04736C13.0947 7.53955 12.6846 7.92236 12.2197 7.92236H8.28223V11.8599C8.28223 12.3521 7.87207 12.7349 7.40723 12.7349H6.53223C6.04004 12.7349 5.65723 12.3521 5.65723 11.8599V7.92236H1.71973C1.22754 7.92236 0.844727 7.53955 0.844727 7.04736V6.17236C0.844727 5.70752 1.22754 5.29736 1.71973 5.29736H5.65723V1.35986C5.65723 0.89502 6.04004 0.484863 6.53223 0.484863H7.40723C7.87207 0.484863 8.28223 0.89502 8.28223 1.35986V5.29736H12.2197Z"
-                                            fill="white"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content">
-                                <p>
-                                    Facetas podem durar mais de 10 anos. Tudo
-                                    depende dos materiais usados e do cuidado
-                                    com a saúde bucal. Aqui na Elim Prime
-                                    Odonto, nós sempre trabalhamos com os
-                                    melhores materiais, profissionais e
-                                    tecnologia de ponta!
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item px-5">
-                            <div
-                                class="accordion-header flex items-center justify-between"
-                            >
-                                <h3>
-                                    Como é o procedimento de aplicação da
-                                    faceta?
-                                </h3>
-                                <div
-                                    class="grid size-8 shrink-0 place-content-center overflow-hidden rounded-full bg-acent p-1 *:size-4"
-                                >
-                                    <svg
-                                        width="14"
-                                        height="13"
-                                        viewBox="0 0 14 13"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.2197 5.29736C12.6846 5.29736 13.0947 5.70752 13.0947 6.17236V7.04736C13.0947 7.53955 12.6846 7.92236 12.2197 7.92236H8.28223V11.8599C8.28223 12.3521 7.87207 12.7349 7.40723 12.7349H6.53223C6.04004 12.7349 5.65723 12.3521 5.65723 11.8599V7.92236H1.71973C1.22754 7.92236 0.844727 7.53955 0.844727 7.04736V6.17236C0.844727 5.70752 1.22754 5.29736 1.71973 5.29736H5.65723V1.35986C5.65723 0.89502 6.04004 0.484863 6.53223 0.484863H7.40723C7.87207 0.484863 8.28223 0.89502 8.28223 1.35986V5.29736H12.2197Z"
-                                            fill="white"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content">
-                                <p>
-                                    As facetas de resina são aplicadas por cima
-                                    dos dentes, em forma pastosa, então é
-                                    esculpida e endurecida com
-                                    fotopolimerização.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item px-5">
-                            <div
-                                class="accordion-header flex items-center justify-between"
-                            >
-                                <h3>
-                                    É necessário algum cuidado especial após a
-                                    aplicação de facetas?
-                                </h3>
-                                <div
-                                    class="grid size-8 shrink-0 place-content-center overflow-hidden rounded-full bg-acent p-1 *:size-4"
-                                >
-                                    <svg
-                                        width="14"
-                                        height="13"
-                                        viewBox="0 0 14 13"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M12.2197 5.29736C12.6846 5.29736 13.0947 5.70752 13.0947 6.17236V7.04736C13.0947 7.53955 12.6846 7.92236 12.2197 7.92236H8.28223V11.8599C8.28223 12.3521 7.87207 12.7349 7.40723 12.7349H6.53223C6.04004 12.7349 5.65723 12.3521 5.65723 11.8599V7.92236H1.71973C1.22754 7.92236 0.844727 7.53955 0.844727 7.04736V6.17236C0.844727 5.70752 1.22754 5.29736 1.71973 5.29736H5.65723V1.35986C5.65723 0.89502 6.04004 0.484863 6.53223 0.484863H7.40723C7.87207 0.484863 8.28223 0.89502 8.28223 1.35986V5.29736H12.2197Z"
-                                            fill="white"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="accordion-content">
-                                <p>
-                                    As facetas também servem como uma proteção
-                                    para o seu dente. Não sendo necessário
-                                    nenhum cuidado diferente às recomendações
-                                    dos dentistas.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+    <footer class="bg-acent pb-10 sm:pt-20">
+        <section class="container" data-aos="fade-down">
+            <div class="flex flex-col items-center justify-between gap-8 sm:flex-row">
+                <img src="/assets/temp/site-logo.png" alt="Logo da Elim Prime" loading="lazy" width="152" height="68" />
+                <div class="*:text-center *:text-white sm:*:text-end">
+                    <h4>Entre em contato</h4>
+                    <p>
+                        <a class="py-1.5 text-base font-light underline underline-offset-4 transition-all duration-300 hover:underline-offset-2"
+                            href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20">(11)
+                            94373-4142</a>
+                    </p>
+                    <p>
+                        <a class="py-1.5 text-base font-light"
+                            href="mailto:contato@elimprimeodonto.com.br">contato@elimprimeodonto.com.br</a>
+                    </p>
                 </div>
-            </section>
+            </div>
 
-            <section class="bg-acent">
-                <div
-                    class="container flex items-center justify-between py-0 max-md:flex-col max-md:gap-10 max-md:py-10"
-                    data-aos="fade-down"
-                >
-                    <div
-                        class="*:text-center *:text-white max-md:py-10 md:mr-40 md:w-fit md:*:text-start"
-                    >
-                        <h3 class="pb-2">A CLÍNICA</h3>
-                        <h4 class="text-xl">Endereço</h4>
-                        <p class="py-1.5 text-base">
-                            R. Alm. Brasil, 685 - Sala 1106<br />Mooca - São
-                            Paulo
-                        </p>
-                        <p>
-                            <a
-                                class="underline underline-offset-4 transition-all duration-300 hover:underline-offset-2"
-                                href="https://maps.app.goo.gl/TwFQ4rx4BGqqUrP97"
-                                target="_blank"
-                                >Ver mapa no google</a
-                            >
-                        </p>
-                        <h4 class="pb-2 pt-8">Contato</h4>
-                        <p>
-                            <a
-                                class="py-1.5 text-base underline underline-offset-4 transition-all duration-300 hover:underline-offset-2"
-                                href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
-                                >(11) 94373-4142</a
-                            >
-                        </p>
-                        <p>
-                            <a
-                                class="py-1.5 text-base underline underline-offset-4 transition-all duration-300 hover:underline-offset-2"
-                                href="mailto:contato@elimprimeodonto.com.br"
-                                >contato@elimprimeodonto.com.br</a
-                            >
-                        </p>
-                    </div>
-                    <div>
-                        <iframe
-                            class="w-dvw"
-                            title="Location"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.455568458669!2d-46.60815552462648!3d-23.552076278806222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5914f213324d%3A0xe8524c9f5f3ac23!2sElim%20Prime%20Odonto%20Clinic!5e0!3m2!1spt-BR!2sbr!4v1726062828564!5m2!1spt-BR!2sbr"
-                            height="480"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="bg-acent pb-10 sm:pt-20">
-            <section class="container" data-aos="fade-down">
-                <div
-                    class="flex flex-col items-center justify-between gap-8 sm:flex-row"
-                >
-                    <img
-                        src="/assets/temp/site-logo.png"
-                        alt="Logo da Elim Prime"
-                        loading="lazy"
-                        width="152"
-                        height="68"
-                    />
-                    <div class="*:text-center *:text-white sm:*:text-end">
-                        <h4>Entre em contato</h4>
-                        <p>
-                            <a
-                                class="py-1.5 text-base font-light underline underline-offset-4 transition-all duration-300 hover:underline-offset-2"
-                                href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
-                                >(11) 94373-4142</a
-                            >
-                        </p>
-                        <p>
-                            <a
-                                class="py-1.5 text-base font-light"
-                                href="mailto:contato@elimprimeodonto.com.br"
-                                >contato@elimprimeodonto.com.br</a
-                            >
-                        </p>
-                    </div>
-                </div>
-
-                <div
-                    class="flex items-center justify-between gap-8 pb-6 pt-10 max-sm:py-10"
-                >
-                    <div
-                        class="h-px w-full max-w-sm bg-white bg-opacity-40"
-                    ></div>
-                    <div
-                        class="flex w-fit shrink-0 items-center justify-center gap-8"
-                    >
-                        <a
-                            class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
-                            href="https://www.facebook.com/profile.php?id=100092396007966"
-                            target="_blank"
-                        >
-                            <img
-                                class="size-5 object-contain"
-                                src="/assets/svg/Facebook.svg"
-                                alt="Facebook Item"
-                                width="10"
-                                height="18"
-                            />
-                            <span class="sr-only">Nosso Facebook</span>
-                        </a>
-                        <a
-                            class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
-                            href="https://www.facebook.com/profile.php?id=100092396007966"
-                            target="_blank"
-                        >
-                            <img
-                                class="size-5 object-contain"
-                                src="/assets/svg/Instagram.svg"
-                                alt="Instagram Item"
-                                width="15"
-                                height="16"
-                            />
-                            <span class="sr-only">Nosso Instagram</span>
-                        </a>
-                        <a
-                            class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
-                            href="https://www.facebook.com/profile.php?id=100092396007966"
-                            target="_blank"
-                        >
-                            <img
-                                class="size-5 object-contain"
-                                src="/assets/svg/TikTok.svg"
-                                alt="TikTok Item"
-                                width="15"
-                                height="18"
-                            />
-                            <span class="sr-only">Nosso TikTok</span>
-                        </a>
-                        <a
-                            class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
-                            href="https://www.facebook.com/profile.php?id=100092396007966"
-                            target="_blank"
-                        >
-                            <img
-                                class="size-5 object-contain"
-                                src="/assets/svg/Whatsapp.svg"
-                                alt="Whatsapp Item"
-                                width="15"
-                                height="16"
-                            />
-                            <span class="sr-only">Nosso Whatsapp</span>
-                        </a>
-                    </div>
-                    <div
-                        class="h-px w-full max-w-sm bg-white bg-opacity-40"
-                    ></div>
-                </div>
-
-                <div
-                    class="flex flex-col items-center justify-between gap-8 sm:flex-row"
-                >
-                    <div class="font-light *:text-white">
-                        <p>
-                            © 2024 Elim Prime Odonto.<br />
-                            Todos os direitos reservados
-                        </p>
-                    </div>
-                    <a
-                        href="https://hexlab.online/"
-                        target="_blank"
-                        rel="nofollow"
-                        class="flex flex-row items-end gap-2 *:text-white max-sm:scale-75"
-                    >
-                        <p class="pb-1.5 font-light">desenvolvido pela</p>
-                        <img
-                            src="/assets/logo hexlab.svg"
-                            alt="Logo da Hexlab"
-                            loading="lazy"
-                            width="135"
-                            height="48"
-                        />
+            <div class="flex items-center justify-between gap-8 pb-6 pt-10 max-sm:py-10">
+                <div class="h-px w-full max-w-sm bg-white bg-opacity-40"></div>
+                <div class="flex w-fit shrink-0 items-center justify-center gap-8">
+                    <a class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
+                        href="https://www.facebook.com/profile.php?id=100092396007966" target="_blank">
+                        <img class="size-5 object-contain" src="/assets/svg/Facebook.svg" alt="Facebook Item" width="10"
+                            height="18" />
+                        <span class="sr-only">Nosso Facebook</span>
+                    </a>
+                    <a class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
+                        href="https://www.facebook.com/profile.php?id=100092396007966" target="_blank">
+                        <img class="size-5 object-contain" src="/assets/svg/Instagram.svg" alt="Instagram Item"
+                            width="15" height="16" />
+                        <span class="sr-only">Nosso Instagram</span>
+                    </a>
+                    <a class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
+                        href="https://www.facebook.com/profile.php?id=100092396007966" target="_blank">
+                        <img class="size-5 object-contain" src="/assets/svg/TikTok.svg" alt="TikTok Item" width="15"
+                            height="18" />
+                        <span class="sr-only">Nosso TikTok</span>
+                    </a>
+                    <a class="scale-100 px-0 transition-all duration-300 hover:scale-125 hover:px-4"
+                        href="https://www.facebook.com/profile.php?id=100092396007966" target="_blank">
+                        <img class="size-5 object-contain" src="/assets/svg/Whatsapp.svg" alt="Whatsapp Item" width="15"
+                            height="16" />
+                        <span class="sr-only">Nosso Whatsapp</span>
                     </a>
                 </div>
-            </section>
-        </footer>
+                <div class="h-px w-full max-w-sm bg-white bg-opacity-40"></div>
+            </div>
 
-        <div class="whatsapp-button fixed bottom-10 right-10 z-20 bg-blend-hue">
-            <a
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
-                class="hover:bg-orange animate-float flex size-14 items-center justify-center rounded-full bg-[#25D366] drop-shadow-2xl transition-all *:size-8 hover:scale-95 sm:size-16 sm:*:size-8"
-            >
-                <svg
-                    width="50"
-                    height="50"
-                    viewBox="0 0 50 50"
-                    fill="none"
-                    xmlns="https://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M39.6874 10.2292C37.7774 8.29985 35.5024 6.77015 32.995 5.72928C30.4876 4.68841 27.7981 4.15722 25.0833 4.16667C13.7083 4.16667 4.43742 13.4375 4.43742 24.8125C4.43742 28.4583 5.39575 32 7.18742 35.125L4.27075 45.8333L15.2083 42.9583C18.2291 44.6042 21.6249 45.4792 25.0833 45.4792C36.4583 45.4792 45.7291 36.2083 45.7291 24.8333C45.7291 19.3125 43.5833 14.125 39.6874 10.2292ZM25.0833 41.9792C21.9999 41.9792 18.9791 41.1458 16.3333 39.5833L15.7083 39.2083L9.20825 40.9167L10.9374 34.5833L10.5208 33.9375C8.80772 31.202 7.89813 28.0401 7.89575 24.8125C7.89575 15.3542 15.6041 7.64584 25.0624 7.64584C29.6458 7.64584 33.9583 9.43751 37.1874 12.6875C38.7863 14.2791 40.0535 16.1722 40.9153 18.2571C41.7772 20.3421 42.2167 22.5773 42.2083 24.8333C42.2499 34.2917 34.5416 41.9792 25.0833 41.9792ZM34.4999 29.1458C33.9791 28.8958 31.4374 27.6458 30.9791 27.4583C30.4999 27.2917 30.1666 27.2083 29.8124 27.7083C29.4583 28.2292 28.4791 29.3958 28.1874 29.7292C27.8958 30.0833 27.5833 30.125 27.0624 29.8542C26.5416 29.6042 24.8749 29.0417 22.9166 27.2917C21.3749 25.9167 20.3541 24.2292 20.0416 23.7083C19.7499 23.1875 19.9999 22.9167 20.2708 22.6458C20.4999 22.4167 20.7916 22.0417 21.0416 21.75C21.2916 21.4583 21.3958 21.2292 21.5624 20.8958C21.7291 20.5417 21.6458 20.25 21.5208 20C21.3958 19.75 20.3541 17.2083 19.9374 16.1667C19.5208 15.1667 19.0833 15.2917 18.7708 15.2708H17.7708C17.4166 15.2708 16.8749 15.3958 16.3958 15.9167C15.9374 16.4375 14.6041 17.6875 14.6041 20.2292C14.6041 22.7708 16.4583 25.2292 16.7083 25.5625C16.9583 25.9167 20.3541 31.125 25.5208 33.3542C26.7499 33.8958 27.7083 34.2083 28.4583 34.4375C29.6874 34.8333 30.8124 34.7708 31.7083 34.6458C32.7083 34.5 34.7708 33.3958 35.1874 32.1875C35.6249 30.9792 35.6249 29.9583 35.4791 29.7292C35.3333 29.5 35.0208 29.3958 34.4999 29.1458Z"
-                        fill="white"
-                    />
-                </svg>
-                <p class="sr-only">Link do nosso Whatsapp</p>
-            </a>
-        </div>
-    </body>
-    <script
-        src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"
-        defer
-    ></script>
+            <div class="flex flex-col items-center justify-between gap-8 sm:flex-row">
+                <div class="font-light *:text-white">
+                    <p>
+                        © 2024 Elim Prime Odonto.<br />
+                        Todos os direitos reservados
+                    </p>
+                </div>
+                <a href="https://hexlab.online/" target="_blank" rel="nofollow"
+                    class="flex flex-row items-end gap-2 *:text-white max-sm:scale-75">
+                    <p class="pb-1.5 font-light">desenvolvido pela</p>
+                    <img src="/assets/logo hexlab.svg" alt="Logo da Hexlab" loading="lazy" width="135" height="48" />
+                </a>
+            </div>
+        </section>
+    </footer>
 
-    <script src="./js/plugins.js" defer></script>
-    <script src="./js/all.js" defer></script>
+    <div class="whatsapp-button fixed bottom-10 right-10 z-20 bg-blend-hue">
+        <a target="_blank"
+            href="https://api.whatsapp.com/send?phone=5511943734142&text=Ol%C3%A1!%20Tenho%20interesse%20em%20facetas%20em%20resina%20e%20vi%20seu%20site%20no%20google.%20"
+            class="hover:bg-orange animate-float flex size-14 items-center justify-center rounded-full bg-[#25D366] drop-shadow-2xl transition-all *:size-8 hover:scale-95 sm:size-16 sm:*:size-8">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="https://www.w3.org/2000/svg">
+                <path
+                    d="M39.6874 10.2292C37.7774 8.29985 35.5024 6.77015 32.995 5.72928C30.4876 4.68841 27.7981 4.15722 25.0833 4.16667C13.7083 4.16667 4.43742 13.4375 4.43742 24.8125C4.43742 28.4583 5.39575 32 7.18742 35.125L4.27075 45.8333L15.2083 42.9583C18.2291 44.6042 21.6249 45.4792 25.0833 45.4792C36.4583 45.4792 45.7291 36.2083 45.7291 24.8333C45.7291 19.3125 43.5833 14.125 39.6874 10.2292ZM25.0833 41.9792C21.9999 41.9792 18.9791 41.1458 16.3333 39.5833L15.7083 39.2083L9.20825 40.9167L10.9374 34.5833L10.5208 33.9375C8.80772 31.202 7.89813 28.0401 7.89575 24.8125C7.89575 15.3542 15.6041 7.64584 25.0624 7.64584C29.6458 7.64584 33.9583 9.43751 37.1874 12.6875C38.7863 14.2791 40.0535 16.1722 40.9153 18.2571C41.7772 20.3421 42.2167 22.5773 42.2083 24.8333C42.2499 34.2917 34.5416 41.9792 25.0833 41.9792ZM34.4999 29.1458C33.9791 28.8958 31.4374 27.6458 30.9791 27.4583C30.4999 27.2917 30.1666 27.2083 29.8124 27.7083C29.4583 28.2292 28.4791 29.3958 28.1874 29.7292C27.8958 30.0833 27.5833 30.125 27.0624 29.8542C26.5416 29.6042 24.8749 29.0417 22.9166 27.2917C21.3749 25.9167 20.3541 24.2292 20.0416 23.7083C19.7499 23.1875 19.9999 22.9167 20.2708 22.6458C20.4999 22.4167 20.7916 22.0417 21.0416 21.75C21.2916 21.4583 21.3958 21.2292 21.5624 20.8958C21.7291 20.5417 21.6458 20.25 21.5208 20C21.3958 19.75 20.3541 17.2083 19.9374 16.1667C19.5208 15.1667 19.0833 15.2917 18.7708 15.2708H17.7708C17.4166 15.2708 16.8749 15.3958 16.3958 15.9167C15.9374 16.4375 14.6041 17.6875 14.6041 20.2292C14.6041 22.7708 16.4583 25.2292 16.7083 25.5625C16.9583 25.9167 20.3541 31.125 25.5208 33.3542C26.7499 33.8958 27.7083 34.2083 28.4583 34.4375C29.6874 34.8333 30.8124 34.7708 31.7083 34.6458C32.7083 34.5 34.7708 33.3958 35.1874 32.1875C35.6249 30.9792 35.6249 29.9583 35.4791 29.7292C35.3333 29.5 35.0208 29.3958 34.4999 29.1458Z"
+                    fill="white" />
+            </svg>
+            <p class="sr-only">Link do nosso Whatsapp</p>
+        </a>
+    </div>
+</body>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+
+<script src="./js/plugins.js" defer></script>
+<script src="./js/all.js" defer></script>
+
 </html>
