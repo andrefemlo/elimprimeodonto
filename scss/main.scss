@@ -56,5 +56,5 @@
 }
 
 header {
-    @apply fixed top-0 z-10 w-full border-b border-solid border-white border-opacity-5 bg-black bg-opacity-30 py-3 backdrop-blur-xl *:text-white transition-opacity duration-300 has-[.active]:fixed has-[.active]:bg-opacity-80;
+    @apply max-w-screen fixed top-0 z-10 w-full border-b border-solid border-white border-opacity-5 bg-black bg-opacity-30 py-3 backdrop-blur-xl *:text-white transition-opacity duration-300 has-[.active]:fixed has-[.active]:bg-opacity-80;
 }
