@@ -1,0 +1,60 @@
+// TailwindCSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'reset';
+
+
+// Buttons
+.btn {
+    @apply px-8 py-4 rounded-full font-medium tracking-wider;
+
+    &.white {
+        @apply bg-white text-acent;
+    }
+
+    &.acent {
+        @apply bg-acent text-white;
+    }
+}
+
+.accordion {
+    @apply py-2;
+
+    .accordion-item {
+        @apply overflow-hidden;
+
+        &.active {
+            .accordion-header {
+                svg {
+                    rotate: 45deg;
+                }
+            }
+
+            .accordion-content {
+                @apply max-h-screen;
+            }
+        }
+
+        .accordion-header {
+            @apply flex items-center justify-between gap-3 cursor-pointer my-5;
+
+            svg {
+                @apply transition-all ease-linear duration-300;
+            }
+        }
+
+        .accordion-content {
+            @apply max-h-0 h-full duration-500 ease-linear transition-all;
+
+            p {
+                @apply pb-[1.6rem];
+            }
+        }
+    }
+}
+
+header {
+    @apply fixed top-0 z-10 w-full border-b border-solid border-white border-opacity-5 bg-black bg-opacity-30 py-3 backdrop-blur-xl *:text-white transition-opacity duration-300 has-[.active]:fixed has-[.active]:bg-opacity-80;
+}
