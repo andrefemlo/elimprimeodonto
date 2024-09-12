@@ -53,7 +53,6 @@ var swiper = new Swiper('.swiper.transformations', {
   lazyLoading: true,
   centeredSlides: true,
   speed: 2000,
-  // longSwipes: false,
   autoplay: {
     delay: 0,
   },
@@ -152,3 +151,40 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+function loadVideo1(container) {
+  if (!container.classList.contains('video-loaded')) {
+    container.innerHTML = `
+          <video controls autoplay>
+              <source src="./assets/videos/a-vontade-de-sorrir-agora-e-maior.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      `;
+    container.classList.add('video-loaded');
+    container.style.cursor = 'default';
+  }
+}
+function loadVideo2(container) {
+  if (!container.classList.contains('video-loaded')) {
+    container.innerHTML = `
+          <video controls autoplay>
+              <source src="./assets/videos/eu-tinha-muita-vontade-de-mudar-meu-sorriso.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      `;
+    container.classList.add('video-loaded');
+    container.style.cursor = 'default';
+  }
+}
+function loadVideo3(container) {
+  if (!container.classList.contains('video-loaded')) {
+    container.innerHTML = `
+          <video controls autoplay>
+              <source src="./assets/videos/confesso-que-fiquei-impressionado-com-o-resultado.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      `;
+    container.classList.add('video-loaded');
+    container.style.cursor = 'default';
+  }
+}

@@ -400,27 +400,27 @@
             <div class="swiper testemonies max-w-screen-2xl">
                 <div class="swiper-wrapper py-10">
                     <div class="swiper-slide">
-                        <iframe class="aspect-[9/16] w-full"
-                            src="https://www.youtube-nocookie.com/embed/YKY_fjDKZA4?si=v9NLXtsNiRAy3hJw&amp;controls=0"
-                            title="YouTube video player" frameborder="0" loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="relative video-container" onclick="loadVideo1(this)">
+                            <img src="/assets/webp/testemonie-3.webp" alt="Video Thumbnail" loading="lazy">
+                            <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition-all cursor-pointer"
+                                src="/assets/svg/play.svg" alt="Botão de reprodução" loading="lazy">
+                        </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <iframe class="aspect-[9/16] w-full"
-                            src="https://www.youtube-nocookie.com/embed/z8B7jqOK4go?si=9M3BIBUYXButKmgF&amp;controls=0"
-                            title="YouTube video player" frameborder="0" loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="relative video-container" onclick="loadVideo2(this)">
+                            <img src="/assets/webp/testemonie-1.webp" alt="Video Thumbnail" loading="lazy">
+                            <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition-all cursor-pointer"
+                                src="/assets/svg/play.svg" alt="Botão de reprodução" loading="lazy">
+                        </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <iframe class="aspect-[9/16] w-full"
-                            src="https://www.youtube-nocookie.com/embed/cWCqC9Ms_fQ?si=sUoGzTyj-XqUQD7C&amp;controls=0"
-                            title="YouTube video player" frameborder="0" loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="relative video-container" onclick="loadVideo3(this)">
+                            <img src="/assets/webp/testemonie-2.webp" alt="Video Thumbnail" loading="lazy">
+                            <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition-all cursor-pointer"
+                                src="/assets/svg/play.svg" alt="Botão de reprodução" loading="lazy">
+                        </div>
                     </div>
                 </div>
                 <div
@@ -620,7 +620,7 @@
         </section>
 
         <section class="bg-acent" id="location">
-            <div class="container flex items-center justify-between py-0 max-md:flex-col max-md:gap-10 max-md:py-10"
+            <div class="container overflow-hidden flex items-center justify-between py-0 max-md:flex-col max-md:gap-10 max-md:py-10"
                 data-aos="fade-down">
                 <div class="*:text-center *:text-white max-md:py-10 md:mr-40 md:w-fit md:*:text-start">
                     <h3 class="pb-2">A CLÍNICA</h3>
@@ -645,9 +645,9 @@
                     </p>
                 </div>
                 <div>
-                    <iframe class="w-dvw" title="Location"
+                    <iframe title="Location"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.455568458669!2d-46.60815552462648!3d-23.552076278806222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5914f213324d%3A0xe8524c9f5f3ac23!2sElim%20Prime%20Odonto%20Clinic!5e0!3m2!1spt-BR!2sbr!4v1726062828564!5m2!1spt-BR!2sbr"
-                        height="480" style="border: 0" allowfullscreen="" loading="lazy"
+                        height="480" width="767" style="border: 0" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
