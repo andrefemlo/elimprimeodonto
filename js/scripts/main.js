@@ -52,6 +52,11 @@ var swiper = new Swiper('.swiper.transformations', {
   loop: true,
   lazyLoading: true,
   centeredSlides: true,
+  speed: 2000,
+  // longSwipes: false,
+  autoplay: {
+    delay: 0,
+  },
   spaceBetween: 12,
   breakpoints: {
     0: {
