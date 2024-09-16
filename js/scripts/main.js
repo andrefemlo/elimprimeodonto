@@ -50,7 +50,6 @@ var swiper = new Swiper('.swiper.testemonies', {
 
 var swiper = new Swiper('.swiper.transformations', {
   loop: true,
-  lazyLoading: true,
   centeredSlides: true,
   speed: 2000,
   autoplay: {
