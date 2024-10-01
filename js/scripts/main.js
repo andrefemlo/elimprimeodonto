@@ -54,22 +54,20 @@ var swiper = new Swiper('.swiper.transformations', {
   speed: 2000,
   autoplay: {
     delay: 0,
+    disableOnInteraction: false,
   },
   spaceBetween: 12,
   breakpoints: {
     0: {
-      slidesPerView: 1.1,
+      slidesPerView: 2.1,
     },
     676: {
-      slidesPerView: 2.2,
-    },
-    840: {
       slidesPerView: 3.2,
     },
-    1020: {
-      centeredSlides: false,
+    840: {
       slidesPerView: 4,
-    }
+      centeredSlides: false,
+    },
   },
 });
 
