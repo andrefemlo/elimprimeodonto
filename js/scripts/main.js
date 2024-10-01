@@ -52,9 +52,9 @@ var swiper = new Swiper('.swiper.transformations', {
   loop: true,
   centeredSlides: true,
   speed: 2000,
+  pauseOnInteraction: true,
   autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
+    delay: 200,
   },
   spaceBetween: 12,
   breakpoints: {
