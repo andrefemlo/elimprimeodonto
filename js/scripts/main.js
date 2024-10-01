@@ -57,10 +57,6 @@ var swiper = new Swiper('.swiper.transformations', {
     delay: 600,
     disableOnInteraction: true,
   },
-  freeMode: {
-    enabled: true,
-    sticky: true,
-  },
   spaceBetween: 12,
   breakpoints: {
     0: {
