@@ -51,15 +51,20 @@ var swiper = new Swiper('.swiper.testemonies', {
 var swiper = new Swiper('.swiper.transformations', {
   loop: true,
   centeredSlides: true,
-  speed: 2000,
+  speed: 800,
   pauseOnInteraction: true,
   autoplay: {
-    delay: 200,
+    delay: 600,
+    disableOnInteraction: true,
+  },
+  freeMode: {
+    enabled: true,
+    sticky: true,
   },
   spaceBetween: 12,
   breakpoints: {
     0: {
-      slidesPerView: 1.4,
+      slidesPerView: 1.1,
     },
     676: {
       slidesPerView: 3.2,
