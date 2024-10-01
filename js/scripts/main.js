@@ -59,7 +59,7 @@ var swiper = new Swiper('.swiper.transformations', {
   spaceBetween: 12,
   breakpoints: {
     0: {
-      slidesPerView: 2.1,
+      slidesPerView: 1.4,
     },
     676: {
       slidesPerView: 3.2,
